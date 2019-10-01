@@ -1,0 +1,11 @@
+<h1>This is the results page</h1>
+
+<% data.Search.forEach((e) => { %>
+   <li> <%= e.Title %> </li>
+<% }) %>
+
+<% data.Search.forEach((e) => { %>
+   <% if (e.Poster !== 'N/A') { %>
+      <img src=" <%= e.Poster %> " >
+   <% } %>
+<% }) %>
