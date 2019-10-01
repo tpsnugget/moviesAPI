@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/results', (req, res) => {
-   request('http://www.omdbapi.com/?apikey=thewdb&s=The-Sound-of-Music', (error, response, body) => {
+   var searchStr = 'http://www.omdbapi.com/?apikey=thewdb&s=' + req.query.searchText
+   request(searchStr, (error, response, body) => {
       if (!error && response.statusCode == 200) {
          var data = JSON.parse(body)
          res.render('results', { data: data })

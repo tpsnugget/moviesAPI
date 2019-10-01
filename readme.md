@@ -9,3 +9,5 @@
 # Version 3: Colt Steel, Web Dev Bootcamp, Section 27, Chapter 287
 # Movie API App: Displaying Data
 
+# Version 4: Colt Steel, Web Dev Bootcamp, Section 27, Chapter 288
+# Movie API App: Adding Search
